@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(135deg, rgba(247, 229, 232, 0.58) 0%, rgba(251, 247, 242, 0.82) 32%, rgba(233, 236, 231, 0.74) 100%);
+  color: #27211f;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  text-rendering: geometricPrecision;
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top left, rgba(143, 79, 89, 0.26), transparent 30%),
+    linear-gradient(135deg, #171114 0%, #20161c 48%, #151b1b 100%);
+  color: #f8f1ec;
+}
+
+.font-editorial {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.dark .text-ink {
+  color: #f8f1ec;
+}
+
+.dark .text-cocoa {
+  color: #cbb8ad;
+}
+
+.dark .text-rosewood {
+  color: #e8aeb8;
+}
+
+.dark .text-sage {
+  color: #b8c6a8;
+}
+
+.dark .text-clay {
+  color: #efad99;
+}
+
+.dark .bg-shell,
+.dark .bg-paper,
+.dark .bg-\[\#fffdfb\] {
+  background-color: rgba(36, 25, 31, 0.92);
+}
+
+.dark [class*="bg-white"] {
+  background-color: rgba(42, 30, 36, 0.88) !important;
+}
+
+.dark .bg-blush,
+.dark .bg-blush\/45,
+.dark .bg-blush\/50,
+.dark .bg-blush\/55,
+.dark .bg-blush\/60 {
+  background-color: rgba(74, 38, 52, 0.58);
+}
+
+.dark .bg-mist {
+  background-color: rgba(72, 63, 66, 0.72);
+}
+
+.dark .border-rosewood\/10,
+.dark .border-rosewood\/15,
+.dark .border-white\/70 {
+  border-color: rgba(232, 174, 184, 0.16);
+}
+
+.dark .shadow-lift,
+.dark .shadow-soft {
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.26);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #8f4f59;
+  outline-offset: 2px;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: rgba(111, 90, 74, 0.68);
+}
+
+.dark textarea::placeholder,
+.dark input::placeholder {
+  color: rgba(203, 184, 173, 0.62);
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(143, 79, 89, 0.28);
+  border: 3px solid #fbf7f2;
+  border-radius: 999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(232, 174, 184, 0.26);
+  border-color: #171114;
+}
+
+::selection {
+  background: #f7e5e8;
+  color: #27211f;
+}
+
+.dark ::selection {
+  background: #8f4f59;
+  color: #fffdf9;
+}
